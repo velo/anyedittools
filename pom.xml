@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>de.loskutov.anyedit</groupId>
+  <artifactId>AnyEditTools-parent</artifactId>
+  <version>2.7.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+    <module>AnyEditTools</module>
+    <module>AnyEditTools-feature</module>
+  </modules>
+
+  <properties>
+    <tycho-version>1.0.0</tycho-version>
+  </properties>
+
+  <repositories>
+   <repository>
+     <id>mars</id>
+     <layout>p2</layout>
+     <url>http://download.eclipse.org/releases/mars</url>
+   </repository>
+  </repositories>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
